@@ -1,0 +1,18 @@
+@name G Guage Holo Body
+
+#Config
+Model = "models/gsgtrainprops/trains/c449w/c449w_bnsf.mdl"
+Color = vec(255,255,255)
+Offset = vec(0,0,-5)
+Size = vec(1,1,1)/6 #scale down model
+Angle = ang(0,90,0)
+
+
+entity():setMaterial("models/proppertextures/invisible")
+holoCreate(0)
+holoParent(0,entity())
+holoModel(0,Model)
+holoColor(0,Color)
+holoPos(0,entity():toWorld(Offset))
+holoScale(0,Size)
+holoAng(0,entity():toWorld(Angle))
